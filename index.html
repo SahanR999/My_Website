@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+	<link rel="icon" href="images/Logo2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/Logo2.jpg" alt="Logo" title="My Logo">
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1_study_subject.html">My Study Subject</a></li>
+            <li><a href="page2_my_hobbies.html">My Hobbies</a></li>
+            <li><a href="page3_my_music.html">My Music</a></li>
+            <li><a href="page4_my_house.php">My House</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <aside>
+            <h2>News Feed</h2>
+            <ul>
+                <li><a href="https://studelp.com/study-techniques.html" target="_blank">
+                    <img src="images/News1.jpeg" alt="News Item 1" title="News Item 1">
+                    Exciting New Study Techniques Revealed
+                </a></li>
+                <li><a href="https://www.mindbodygreen.com/articles/list-of-hobbies" target="_blank">
+                    <img src="images/News2.jpeg" alt="News Item 2" title="News Item 2">
+                    My Top 5 Hobbies for a Balanced Life
+                </a></li>
+                <li><a href="https://music.youtube.com/" target="_blank">
+                    <img src="images/News3.jpeg" alt="News Item 3" title="News Item 3">
+                    Top 10 Music Tracks for Studying
+                </a></li>
+                <li><a href="https://house.lk/sale/house/" target="_blank">
+                    <img src="images/News4.jpeg" alt="News Item 4" title="News Item 4">
+                    A Sneak Peek into My New House
+                </a></li>
+            </ul>
+        </aside>
+        
+        <section>
+           <img src="images/Home1.jpg" alt="My Photo" title="This is me" width="300" height="500">
+            <article>
+                <h2>About Me</h2>
+              <p><strong>Hi, I'm Ruvindri Peiris</strong>. I'm currently studying <em>Bachelor of Information Technology</em> with a specialisation in <em>Cyber Security</em> at <u>Kent Institute Australia</u>. This is my personal website where I share my academic interests, hobbies, and more!</p>
+
+        <p>I'm passionate about exploring the latest advancements in technology and cyber security, and I am committed to developing innovative solutions to address today's security challenges. With hands-on experience in various IT projects and a keen interest in ethical hacking, I aim to contribute to the field by enhancing digital safety.</p>
+
+        <p>Here, you'll find details about my <strong><em>study subjects</em></strong>, which include cutting-edge topics in IT and cyber security, along with insights into my <u>hobbies</u> such as photography, traveling, and creative writing. I also share a bit about my favorite music, which includes genres like classical, jazz, and electronic.</p>
+
+        <p>Additionally, I offer a glimpse into my <strong>house</strong> and <strong>lifestyle</strong>. My home reflects my personal style with a blend of modern and cozy elements. I enjoy creating a welcoming space where I can unwind and work on my projects. Through my lifestyle section, you can learn more about how I balance my academic commitments with relaxation and self-care.</p>
+
+        <p>Feel free to explore my website to learn more about my journey and connect with me through my <a href="https://www.linkedin.com/in/ruvindrip" target="_blank">LinkedIn profile</a> or social media links.</p>
+
+        <p>Thank you for visiting my site. I hope you find the content interesting and informative!</p>
+		
+		
+		<hr>
+        <p><strong>Main Achievements:</strong></p>
+        <ul>
+            <li>Dean's List (2023)</li>
+            <li>Winner of the National IT Innovation Competition (2022)</li>
+            <li>Volunteer at CyberSafe Australia (2021 - Present)</li>
+        </ul>
+        <hr>
+        <p><strong>Goals:</strong></p>
+        <ul>
+            <li>Complete my degree with honors.</li>
+            <li>Travel to Japan and explore its tech industry.</li>
+            <li>Learn Japanese and become fluent in the language.</li>
+        </ul>
+            </article>
+        </section>
+    </main>
+    
+    <button class="contact-button" onclick="openModal()">Contact Me</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Contact Me</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="contact-form" action="contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="closeModal()">Close</button>
+                <button type="submit" form="contact-form">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Email: ruvindrip@example.com | Phone: (077) 245-9987 | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+        <p>Site created on: 08-18-2024</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://accounts.google.com" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("myModal")) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* Basic reset and body styling */
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2C3E50; /* Navy blue */
+            color: #ECF0F1; /* Light grey */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header img {
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #34495E; /* Darker navy blue */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #ECF0F1; /* Light grey */
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #2C3E50; /* Navy blue */
+            transform: scale(1.05);
+        }
+
+	/* Main content styling */
+	main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+	}
+
+	/* Aside (Menu) styling */
+	aside {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+	}
+
+	aside h2 {
+    font-size: 1.8em;
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+	}
+
+	aside ul {
+    list-style-type: none;
+    padding: 0;
+	}
+
+	aside ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+	}
+
+	aside ul li a {
+    color: #00796b;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+	}
+
+	aside ul li a img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+	}
+
+	aside ul li a:hover {
+    text-decoration: underline;
+	}
+
+
+	/* Section styling */
+	section {
+    flex: 2 1 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+	}
+
+	section img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+	}
+
+	article h2 {
+    font-size: 2em;
+    color: #004d40;
+	}
+
+	article p {
+    line-height: 1.8;
+	}
+
+article ul {
+    margin-left: 20px;
+}
+
+	article ul li {
+    margin: 5px 0;
+	}
+
+	/* Contact Button styling */
+	.contact-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+	}
+
+	.contact-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+	}
+
+	/* Modal styling */
+	.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    animation: fadeIn 0.5s ease-in-out;
+	}
+
+	.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	.modal-header {
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+
+	.modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+	}
+
+	.modal-body {
+    padding: 20px;
+	}
+
+	.modal-body form {
+    display: flex;
+    flex-direction: column;
+	}
+
+	.modal-body label {
+    margin-bottom: 5px;
+    font-weight: bold;
+	}
+
+	.modal-body input[type="text"], .modal-body input[type="email"], .modal-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+	}
+
+	.modal-body textarea {
+    height: 150px;
+    resize: vertical;
+	}
+
+	.modal-footer {
+    padding: 10px;
+    text-align: right;
+	}
+
+	.modal-footer button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 10px;
+	}
+
+	.modal-footer button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+	}
+
+	/* Animation Keyframes */
+	@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside, section {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+	}
+
+		/* Footer styling */
+        footer {
+            background-color: #2C3E50; /* Navy blue */
+            color: #ECF0F1; /* Light grey */
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        footer a {
+            color: #FFD700; /* Golden */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+		.social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: #ECF0F1; /* Light grey */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #FFD700; /* Golden */
+        }
+
+        .social-media i {
+            font-size: 24px; /* Adjust icon size as needed */
+        }
+
+
+

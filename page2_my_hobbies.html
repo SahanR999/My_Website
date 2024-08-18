@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+	<link rel="icon" href="images/Logo2.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2C3E50; /* Navy blue */
+            color: #ECF0F1; /* Light grey */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header img {
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #34495E; /* Darker navy blue */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #ECF0F1; /* Light grey */
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #2C3E50; /* Navy blue */
+            transform: scale(1.05);
+        }
+        /* Section styling */
+        section {
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section h2 {
+            color: #008891; /* Lighter teal */
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+            text-align: center;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        section ul li {
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            animation: fadeIn 1s ease-in-out;
+            flex: 1 1 calc(33% - 40px); /* 3 items per row with some spacing */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        section ul li:hover {
+            background-color: #e0f7fa; /* Light cyan */
+            transform: scale(1.05);
+        }
+
+        section ul li img {
+            max-width: 100px;
+            border-radius: 5px;
+            margin-top: 10px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        section ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #2C3E50; /* Navy blue */
+            color: #ECF0F1; /* Light grey */
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        footer a {
+            color: #FFD700; /* Golden */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: #ECF0F1; /* Light grey */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #FFD700; /* Golden */
+        }
+
+        .social-media i {
+            font-size: 24px; /* Adjust icon size as needed */
+        }
+
+        /* Animation Keyframes */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header img {
+                width: 50px;
+            }
+
+            nav ul li {
+                display: block;
+            }
+
+            nav ul li a {
+                padding: 10px;
+            }
+
+            section ul li {
+                flex: 1 1 100%; /* Stack items on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Logo2.jpg" alt="Logo" title="My Logo">
+        <h1>MY HOBBIES</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1_study_subject.html">My Study Subject</a></li>
+            <li><a href="page2_my_hobbies.html">My Hobbies</a></li>
+            <li><a href="page3_my_music.html">My Music</a></li>
+            <li><a href="page4_my_house.php">My House</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Photography <img src="images/Hobbi1.jpeg" alt="Photography" title="I love capturing moments"></li>
+            <li>Traveling <img src="images/Hobbi2.jpeg" alt="Traveling" title="Exploring new places"></li>
+			 <li>Watching <img src="images/Hobbi4.jpeg" alt="Traveling" title="Exploring new places"></li>
+            <li>Reading <img src="images/Hobbi3.jpeg" alt="Reading" title="Diving into stories"></li>
+        </ul>
+    </section>
+    
+    <footer>
+       <p>Email: ruvindrip@example.com | Phone: (077) 245-9987 | <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+        <p>Site created on: 08-18-2024</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://accounts.google.com" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
